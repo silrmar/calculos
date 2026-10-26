@@ -11,15 +11,7 @@ namespace Calculos
     /// </summary>
     internal static class aritmetica
     {
-        /// <summary>
-        /// Tipo de conversão de temperatura a executar
-        /// </summary>
-        public enum ConversaoTemperatura
-        {
-            Nulo=0,
-            CelciusFahrenheit,
-            FahrenheitCelcius
-        }
+        
         /// <summary>
         /// Operação soma
         /// </summary>
@@ -37,18 +29,6 @@ namespace Calculos
         public static int Subtrair(int x, int y)
         {
             return x - y;
-        }
-        public static double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
-        {
-            if (conversao == ConversaoTemperatura.CelciusFahrenheit)
-            {
-                return (temperatura * 1.8000 + 32);
-            }
-            else if (conversao == ConversaoTemperatura.FahrenheitCelcius)
-            {
-                return ((temperatura - 32) / 1.8000);
-            }
-            return -1;
         }
     }
 }
